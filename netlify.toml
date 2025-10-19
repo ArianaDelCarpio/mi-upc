@@ -3,6 +3,6 @@
   command = " "
 
 [[redirects]]
-  from = "/Mi UPC/mi-upc/Mi UPC"
-  to = "/index.html"
+  from = "/*"
+  to = "Mi UPC/mi-upc/Mi UPC/index.html"
   status = 200
