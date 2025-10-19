@@ -1,9 +1,10 @@
 {
   "name": "mi-upc",
   "version": "1.0.0",
-  "description": "Mi UPC - Progressive Web App",
+  "description": "Mi UPC – Progressive Web App",
+  "dependencies": {},  // <--- Deja esto vacío para evitar errores
   "scripts": {
-    "build": "echo 'No build required - static site'"
+    "build": "echo 'No build required – static site'"
   },
   "keywords": ["pwa", "static"],
   "author": "",
