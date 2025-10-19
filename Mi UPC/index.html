@@ -39,6 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     font-family: 'Poppins', sans-serif;
     color: #333;
 
@@ -102,7 +103,7 @@ body {
       font-size: 1rem;
       /* Tamaño de fuente de la fecha */
       font-weight: 400;
-      margin-top: 12px;
+      margin-top: 8px;
       /* Separación del recuadro de la hora */
       color: #657085;
       /* Color de texto gris oscuro */
@@ -110,7 +111,7 @@ body {
 
     /* 4. La Foto del Alumno (Círculo) */
     #foto-container {
-      margin: 30px 0 10px;
+      margin: 15px 0 10px;
       border-radius: 50%;
       border: 5px solid white;
       /* Borde blanco para resaltar */
@@ -119,6 +120,7 @@ body {
       height: 120px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       background-color: #ccc;
+      flex-shrink: 0;
       /* Fondo temporal si no hay imagen */
     }
 
@@ -129,41 +131,42 @@ body {
     }
 
     /* 5. Tarjeta de Datos (Recuadro COMPLETAMENTE Blanco) */
-    .data-card {
-      width: 80%;
-      max-width: 400px;
-      background-color: white;
-      /* FONDO BLANCO */
-      border-radius: 15px;
-      padding: 30px 20px 20px 20px;
-      /* Más padding superior */
-      text-align: center;
-      margin-top: 50px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-      position: relative;
-    }
+.data-card {
+    width: 80%;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 20px 15px 20px; /* Reducido el padding vertical */
+    text-align: center;
+    margin-top: 15px; /* Reducido */
+    margin-bottom: 20px; /* Un poco de espacio al final si hay */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    flex-grow: 1; /* Permite que la tarjeta crezca y ocupe el espacio restante */
+    display: flex; /* La convertimos a flex para distribuir su contenido interno */
+    flex-direction: column;
+    justify-content: space-around; /* Distribuye espacio entre sus elementos internos */
+}
 
 /* Nombre (El más grande, rojo) */
 #nombre {
-  font-size: 1.8rem;
-  font-weight: 700; 
-  color: #e5002b; /* Rojo UPC */
-  margin-bottom: 25px; 
-  line-height: 1.1;
-  position: relative;
-  
-  /* **CAMBIO CLAVE: APLICAR BEBAS NEUE** */
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.1rem; /* Un poco más grande para el impacto de esta fuente */
-  letter-spacing: 1.5px; /* Para que se vea más separado y ancho */
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #e5002b;
+    margin-bottom: 15px; /* Reducido */
+    line-height: 1.1;
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1.5px;
+    flex-shrink: 0;
 }
 
     /* Información de Alumno */
-    .info-line {
-      margin-bottom: 12px;
-      /* Más espacio entre líneas */
-      font-size: 1rem;
-    }
+.info-line {
+    margin-bottom: 8px; /* Reducido */
+    font-size: 1rem;
+    flex-shrink: 0;
+}
 
     .info-line span:first-child {
       /* Texto como "Código de alumno" y "ID Banner" */
