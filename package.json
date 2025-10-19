@@ -1,12 +1,10 @@
 {
-  "name": "mi-upc",
+  "name": "mi-upc-reloj",
   "version": "1.0.0",
-  "description": "Mi UPC – Progressive Web App",
-  "dependencies": {},  // <--- Deja esto vacío para evitar errores
+  "private": true,
+  "description": "Replica de la TIU virtual de la UPC",
+  "dependencies": {}, 
   "scripts": {
-    "build": "echo 'No build required – static site'"
-  },
-  "keywords": ["pwa", "static"],
-  "author": "",
-  "license": "ISC"
+    "start": "echo 'No build step required'"
+  }
 }
