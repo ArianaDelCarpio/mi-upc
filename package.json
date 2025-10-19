@@ -4,7 +4,7 @@
   "private": true,
   "description": "Replica de la TIU virtual de la UPC",
   "dependencies": {
-    "axios": "^0.21.1"  // <--- ¡Añadimos AXIOS aquí!
+    "axios": "^0.21.1" 
   },
   "scripts": {
     "start": "echo 'No build step required'"
