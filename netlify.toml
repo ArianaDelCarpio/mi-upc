@@ -4,5 +4,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "Mi UPC/mi-upc/Mi UPC/index.html"
+  to = "Mi UPCindex.html"
   status = 200
