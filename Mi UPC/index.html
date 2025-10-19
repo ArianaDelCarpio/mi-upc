@@ -18,28 +18,27 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
   <style>
+
     /* 1. Estilos Generales y Fondo */
-    body {
-      /* **FONDO COMPLETO: IMAGEN DE NUBES** */
-      background-image: url('fondo-nubes.png');
-      /* ¡Asegúrate que el nombre de archivo sea correcto! */
-      background-size: cover;
-      /* Cubre toda la pantalla */
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      /* Mantiene la imagen fija si hay scroll */
+body {
+    /* **FONDO COMPLETO: IMAGEN DE NUBES** */
+    background-image: url('fondo-nubes.png'); /* ¡La imagen cubre todo! */
+    background-size: cover; /* Cubre toda la pantalla sin distorsión */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    /* Nota: Usamos el color de fondo de las nubes como fallback */
+    background-color: #f0f0f0; 
 
-      min-height: 100vh;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-family: 'Poppins', sans-serif;
-      /* Usamos Poppins para que el nombre sea más ancho */
-      color: #333;
-    }
-
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
     /* ... el resto de tu CSS continúa aquí ... */
 
     /* 2. Cabecera (Barra superior BLANCA, estilo TIU) */
@@ -131,7 +130,7 @@
 
     /* 5. Tarjeta de Datos (Recuadro COMPLETAMENTE Blanco) */
     .data-card {
-      width: 90%;
+      width: 80%;
       max-width: 400px;
       background-color: white;
       /* FONDO BLANCO */
@@ -292,7 +291,7 @@
   <div id="fecha">Sunday, 19 Oct 2025</div>
 
   <div id="foto-container">
-    <img src="https://via.placeholder.com/512/CCCCCC/FFFFFF?text=FOTO" alt="Foto de Alumno">
+    <img src="URL_DE_LA_FOTO_DE_ELMER" alt="Foto de Alumno">
   </div>
 
   <div class="data-card">
