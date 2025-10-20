@@ -81,7 +81,6 @@ body {
     background-color: rgba(230, 224, 248, 0.8); /* Semi-transparente */
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     color: #1a1a1a;
     flex-shrink: 0; /* No se encoge */
 }
@@ -115,7 +114,6 @@ body {
       overflow: hidden;
       width: 120px;
       height: 120px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       background-color: #ccc;
       flex-shrink: 0;
       /* Fondo temporal si no hay imagen */
@@ -137,13 +135,12 @@ body {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     position: relative;
-
-    /* CAMBIOS CLAVE: Quitamos el flex-grow y usamos padding/margin para distribuir */
-    flex-grow: 0; /* No queremos que crezca, solo que contenga el contenido */
-    display: block; /* Volvemos a comportamiento de bloque normal */
-    min-height: auto; /* Quitamos altura mínima */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 250px;
 }
 
 /* Nombre (El más grande, rojo) */
