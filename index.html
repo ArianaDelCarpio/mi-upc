@@ -81,9 +81,12 @@ body {
 /* 3. El Reloj Digital (Recuadro Violeta) */
 #reloj-container {
   margin-top: 10px;
-  padding: 8px 18px; /* Mantiene el padding estrecho */
+  width: 155px;
+  margin-left: 0;
+    margin-right: 0;
+  padding: 10px 12px; /* Mantiene el padding estrecho */
   background-color: #e6e0f8; /* Sólido */
-  border-radius: 10px;
+  border-radius: 6px;
   text-align: center;
   color: #1a1a1a;
   flex-shrink: 0;
@@ -92,8 +95,8 @@ body {
 /* El estilo de #reloj (la hora) permanece igual ya que el tamaño de la fuente es correcto. */
 
     #reloj {
-      font-size: 2.8rem;
-      font-weight: 400;
+      font-size: 2rem;
+      font-weight: 200;
       letter-spacing: 0.5px;
       line-height: 1.1;
     }
@@ -102,7 +105,7 @@ body {
       font-size: 0.9rem;
       /* Tamaño de fuente de la fecha */
       font-weight: 400;
-      margin-top: 5px;
+      margin-top: 8px;
       /* Separación del recuadro de la hora */
       color: #657085;
       flex-shrink: 0; /* No se encoge */
@@ -185,7 +188,7 @@ body {
       /* Los valores numéricos (202211917, N03972300) */
       font-weight: 550;
       /* MUY en negrita */
-      color:  #636262;
+      color:  #585858;
       display: block;
       /* Para que ocupe toda la línea */
       font-size: 1rem;
@@ -203,7 +206,7 @@ body {
 
     #id-banner .value {
       /* "N03972300" */
-      color: #636262;
+      color: #585858;
       font-weight: 550;
       font-size: 1rem;
       display: block;
@@ -214,6 +217,7 @@ body {
     #carrera {
       font-weight: 700;
       /* Carrera en negrita */
+      color: #585858;
       font-size: 0.95rem;
       margin-top: 10px;
       flex-shrink: 0;
