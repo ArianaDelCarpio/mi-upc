@@ -25,8 +25,8 @@
 /* 1. Estilos Generales y Fondo */
 body {
     background-image: url('fondo-nubes.png');
-    background-size: cover;
-    background-position: center center;
+    background-size: contain;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #f0f0f0;
@@ -36,10 +36,11 @@ body {
     display: flex;
     flex-direction: column; /* Apila los elementos verticalmente */
     align-items: center; /* Centra horizontalmente */
-    justify-content: space-between; /* Distribuye espacio entre elementos principales */
+    justify-content: flex-start; /* Distribuye espacio entre elementos principales */
     font-family: 'Poppins', sans-serif;
     color: #333;
-    overflow: hidden; /* Evita el scroll */
+    overflow: hidden;
+    overflow-y:auto; /* Evita el scroll */
     padding-bottom: 5px; /* Pequeño padding para la parte inferior */
 }
 
@@ -51,7 +52,7 @@ body {
     color: #333;
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 0;
     box-sizing: border-box;
     position: relative; /* Cambiado de sticky a relative para que no ocupe un espacio fijo */
     top: 0;
@@ -59,6 +60,7 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     flex-shrink: 0; /* No se encoge */
 }
+
 
 .header-icon {
   color: #e5002b; /* ¡CLAVE! Mantiene la flecha roja */
@@ -76,13 +78,18 @@ body {
 
 /* 3. El Reloj Digital (Recuadro Violeta) */
 #reloj-container {
-  margin-top: 10px; /* Reducido */
-    padding: 8px 18px; /* Reducido el padding horizontal */
-    background-color: rgba(230, 224, 248, 0.8); /* Semi-transparente */
-    border-radius: 10px;
-    text-align: center;
-    color: #1a1a1a;
-    flex-shrink: 0; /* No se encoge */
+  margin-top: 10px;
+
+  /* ELIMINAMOS EL WIDTH Y MAX-WIDTH para que sea del tamaño del contenido */
+  /* width: 90%; */ 
+  /* max-width: 380px; */ 
+
+  padding: 8px 18px; /* Mantiene el padding estrecho */
+  background-color: #e6e0f8; /* Sólido */
+  border-radius: 10px;
+  text-align: center;
+  color: #1a1a1a;
+  flex-shrink: 0;
 }
 
 /* El estilo de #reloj (la hora) permanece igual ya que el tamaño de la fuente es correcto. */
@@ -127,20 +134,21 @@ body {
 
 /* 5. Tarjeta de Datos (Recuadro COMPLETAMENTE Blanco) */
 .data-card {
-    width: 85%;
-    max-width: 380px;
-    background-color: rgba(255, 255, 255, 0.95);
+    width:90%;
+    max-width: 350px;
+    background-color: transparent;
     border-radius: 15px;
-    padding: 20px 20px; /* Aumentamos el padding vertical para que se vea mejor */
+    padding: 80px 10px 10px; /* Aumentamos el padding vertical para que se vea mejor */
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     position: relative;
-    flex-grow: 1;
+    flex-grow: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    min-height: 250px;
+    justify-content: space-between;
+    min-height: auto;
+    box-shadow: none; /* Eliminado el box-shadow para un diseño más limpio */
 }
 
 /* Nombre (El más grande, rojo) */
@@ -227,7 +235,7 @@ body {
 .status-alert {
     margin-top: 10px; /* Reducido */
     width: 90%;
-    max-width: 350px;
+    max-width: 380px;
     box-sizing: border-box;
     padding: 8px 12px; /* Reducido un poco el padding */
     background-color: #1a1a1a;
