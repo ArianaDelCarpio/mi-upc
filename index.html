@@ -64,16 +64,20 @@ body {
 
 .header-icon {
   color: #e5002b; /* ¡CLAVE! Mantiene la flecha roja */
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   /* Ajusta el margen si es necesario, pero debería verse bien */
+  stroke-width: 2;
 }
 
 .header-text {
-  font-size: 1rem;
-  font-weight: 500; /* Texto en negrita */
+  font-size: 1.1rem; /* Un poco más grande para el estilo Bebas Neue */
+  font-weight: 400; /* Bebas Neue es audaz por defecto, no necesita mucho peso */
   margin-left: 5px; /* Pequeña separación del icono */
-  color: #333; /* Texto casi negro */
+  color: #1a1a1a; /* Color casi negro para que resalte */
+  /* ¡CLAVE! Aplicar el tipo de letra del título Bebas Neue */
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
 }
 
 /* 3. El Reloj Digital (Recuadro Violeta) */
@@ -153,8 +157,8 @@ body {
 
 /* Nombre (El más grande, rojo) */
 #nombre {
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-size: 2.1rem;
+    font-weight: 400;
     color: #e5002b;
     margin-bottom: 12px; /* Reducido */
     line-height: 1.1;
